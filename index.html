@@ -428,11 +428,6 @@
             Object.keys(metarEndpoints).forEach(fetchMETAR);
         }
 
-        window.addEventListener('resize', function() {
-            const iframe = document.getElementById("map-iframe");
-            iframe.src = iframe.src;
-        });
-
         document.getElementById("search-bar").addEventListener("input", function () {
             const query = this.value.trim().toUpperCase();
             const widgets = document.querySelectorAll(".widget-container");
